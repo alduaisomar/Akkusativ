@@ -1,0 +1,1 @@
+var nMaxPage = 29;var sCourseName = "Trennbare Verben black";var aMedia = [{"filename":"media7.wav","originalname":"audio1.wav","slide":7},{"filename":"media4.wav","originalname":"audio2.wav","slide":4}];
