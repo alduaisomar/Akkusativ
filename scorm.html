@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="apiwrapper_custom.js" language="javascript"></script>
+		<script src="scofunctions.js" language="javascript"></script>
+		<style type="text/css" media="screen">
+		html, body { height:100%; background-color: #ffffff; overflow-x: hidden; overflow-y: hidden;}
+		body { margin:0; padding:0; }
+		</style>
+	</head>
+	<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="loadPage();init()" onUnload="doQuit()">
+		<iframe src="about:blank" frameborder="0"></iframe>
+		<script>
+			function init() {
+				$('iframe').attr('src','course.html');   
+			}
+
+			function doOnResize() {
+
+		        var _avalHeight = $(window).innerHeight();
+		        var _avalWidth = $(window).innerWidth();
+
+		        $('iframe').width(_avalWidth);
+		        $('iframe').height(_avalHeight);
+
+		      }
+
+		      $( window ).resize(function() {
+		        doOnResize();
+		      });
+
+		      $( document ).ready(function() {
+		        doOnResize();
+		      });
+		</script>
+	</body>
+</html>
